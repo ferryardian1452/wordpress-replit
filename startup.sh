@@ -1,5 +1,5 @@
 #! /bin/bash
-cd ~/$REPL_SLUG
+rm -r phpmyadmin.zip
 wp core download
 curl -o php.zip https://raw.githubusercontent.com/ferryardian1452/wordpress-replit/main/phpmyadmin.zip
 unzip php.zip
