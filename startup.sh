@@ -1,8 +1,9 @@
 #! /bin/bash
 cd ~/$REPL_SLUG
 wp core download
-unzip phpmyadmin.zip
-rm -r phpmyadmin.zip
+curl -o php.zip https://raw.githubusercontent.com/ferryardian1452/wordpress-replit/main/phpmyadmin.zip
+unzip php.zip
+rm -r php.zip
 cat <<EOF > $HOME/$REPL_SLUG/data/my.cnf
 [server]
 datadir=$HOME/$REPL_SLUG/data
